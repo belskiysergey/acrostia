@@ -2,27 +2,31 @@
 
     .bx-wrapper .bx-prev {
         left: 15px;
-        background: url('/images/slide-switch1.png') no-repeat 0 10px;
-        background-size: 20px;
+        background: url('/images/slide-switch1.png') no-repeat 0 21px;
+        background-size: 16px;
     }
 
     .bx-wrapper .bx-next {
         right: 15px;
-        background: url('/images/slide-switch2.png') no-repeat 0 10px;
-        background-size: 20px;
+        background: url('/images/slide-switch2.png') no-repeat right 21px;
+        background-size: 16px;
+    }
+
+    .bx-wrapper .bx-prev:hover {
+        background-position: 0px 21px;
+    }
+
+    .bx-wrapper .bx-next:hover {
+        background-position: 16px 21px;
+    }
+
+    .bx-wrapper .bx-controls-direction a {
+        margin-top: -26px;
     }
 
     .bx-wrapper .bx-pager.bx-default-pager a {
         width: 12px;
         height: 12px;
-    }
-
-    .bx-wrapper .bx-prev:hover {
-        background-position: 0px 10px;
-    }
-
-    .bx-wrapper .bx-next:hover {
-        background-position: 0px 10px;
     }
 
     menu {
@@ -44,10 +48,16 @@
     .banner {
         width: 260px;
         height: 76px;
-        padding: 20px 10px;
         font-size: 17px;
-        margin-left: -132px;
+        margin-left: -130px;
         margin-top: -28px;
-        line-height: 29px;
+
+        .good-ideas {
+            line-height: 14px;
+        }
+
+        .first {
+            font-size: 34px;
+        }
     }
 }
