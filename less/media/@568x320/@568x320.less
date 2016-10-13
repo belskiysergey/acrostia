@@ -1,19 +1,16 @@
 @media screen and (max-width: 568px) {
 
-    .bx-wrapper .bx-prev {
-        background-size: 28px;
+    .bx-wrapper .bx-prev:hover {
+        background-position: 0px 11px;
     }
 
-    .bx-wrapper .bx-next {
-        background-size: 28px;
+    .bx-wrapper .bx-next:hover {
+        background-position: 12px 11px;
     }
 
-    .bx-wrapper .bx-prev {
-        left: 28px;
-    }
 
-    .bx-wrapper .bx-next {
-        right: 28px;
+    .bx-wrapper .bx-controls-direction a {
+        margin-top: -29px;
     }
 
     .bx-wrapper .bx-pager.bx-default-pager a {
@@ -22,8 +19,16 @@
         margin: 0 10px;
     }
 
-    .bx-wrapper .bx-next:hover {
-        background-position: 0px 0px;
+    .bx-wrapper .bx-prev {
+        left: 25px;
+        background: url('/images/slide-switch1.png') no-repeat 0 11px;
+        background-size: 20px;
+    }
+
+    .bx-wrapper .bx-next {
+        right: 25px;
+        background: url('/images/slide-switch2.png') no-repeat right 11px;
+        background-size: 20px;
     }
 
     .acrostia {
@@ -33,17 +38,16 @@
     .banner {
         width: 370px;
         height: 106px;
-        padding: 10px 10px;
-        font-size: 22px;
-        margin-left: -185px;
+        font-size: 24px;
+        margin-left: -187px;
         margin-top: -46px;
 
         .good-ideas {
-            margin-right: 85px;
+            line-height: 23px;
         }
 
         .first {
-            font-size: 58px;
+            font-size: 59px;
         }
     }
 }

@@ -2,27 +2,28 @@
 
     .bx-wrapper .bx-prev {
         left: 15px;
-        background: url('/images/slide-switch1.png') no-repeat 0 10px;
+        background: url('/images/slide-switch1.png') no-repeat 0 26px;
         background-size: 15px;
     }
 
     .bx-wrapper .bx-next {
-        right: 5px;
-        background: url('/images/slide-switch2.png') no-repeat 0 10px;
+        right: 15px;
+        background: url('/images/slide-switch2.png') no-repeat right 26px;
         background-size: 15px;
+    }
+
+    .bx-wrapper .bx-prev:hover {
+        background-position: 0px 26px;
+    }
+
+    .bx-wrapper .bx-next:hover {
+        background-position: 17px 26px;
     }
 
     .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
         bottom: 5px;
     }
 
-    .bx-wrapper .bx-prev:hover {
-        background-position: 0px 10px;
-    }
-
-    .bx-wrapper .bx-next:hover {
-        background-position: 0px 10px;
-    }
 
     menu > a {
         margin-left: 5px;
@@ -45,14 +46,16 @@
     .banner {
         width: 220px;
         height: 76px;
-        padding: 20px 0px;
         font-size: 17px;
         margin-left: -112px;
         margin-top: -28px;
-        line-height: 29px;
 
-        .banner .comes {
-            margin-left: -71px;
+        .good-ideas {
+            line-height: 12px;
+        }
+
+        .first {
+            font-size: 34px;
         }
     }
 }
