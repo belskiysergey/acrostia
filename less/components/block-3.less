@@ -1,14 +1,26 @@
 .block-3 {
-    background: #665464 url('/images/backgraund-lilac.png') no-repeat;
+    background: #665464 url('/images/backgraund-lilac.png') no-repeat 0px -216px;
     color: #ffffff;
-    padding-top: 189px;
+    padding: 189px 0px 107px 0px;
     text-align: center;
 
-    .padd-service {
+    .flex-container {
         margin-top: 69px;
 
         .item {
             background-color: rgba( 77, 63, 75, 0.502 );
+
+            // -webkit-transition-duration: 1s;
+            // -o-transition-duration: 1s;
+            // -moz-transition-duration: 1s;
+            // transition-duration: 1s;
+
+            // -webkit-transition-property: opacity;
+            // -moz-transition-property: opacity;
+            // -o-transition-property: opacity;
+            // transition-property: opacity;
+
+            transition: 1s;
 
             .icon {
                 width: 180px;
@@ -21,6 +33,7 @@
                     border: 5px #a1859e solid;
                     background: url("/images/sprite-human.png") no-repeat 1px 5px;
                     overflow: hidden;
+                    transition: opacity 1s ease;
                 }
             }
 
@@ -61,47 +74,39 @@
 
             &:hover {
                 background-color: rgba( 77, 63, 75, 0.802 );
-                transition: 0.3s;
 
                 .icon {
                     background-color: #ffffff;
-                    transition: 0.3s;
 
                     .stroke {
                         border: 5px #c25760 solid;
                         background: url("/images/sprite-human.png") no-repeat 1px -238px;
-                        transition: 0.3s;
+                        opacity: 1;
                     }
                 }
 
                 .user-name {
                     color: #ffffff;
-                    transition: 0.3s;
                 }
 
                 .position {
                     color: #f38471;
-                    transition: 0.3s;
                 }
 
                 .facebook {
                     background: #4f689e url("/images/social-networks.png") no-repeat 8px -10px;
-                    transition: 0.3s;
                 }
 
                 .twitter {
                     background: #74c7d5 url("/images/social-networks.png") no-repeat 8px -75px;
-                    transition: 0.3s;
                 }
 
                 .google {
                     background: #df5c64 url("/images/social-networks.png") no-repeat 6px -131px;
-                    transition: 0.3s;
                 }
 
                 .linkedin {
                     background: #3e61af url("/images/social-networks.png") no-repeat 5px -188px;
-                    transition: 0.3s;
                 }
             }
         }
