@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Acrostia</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="stylesheet" href="less/libs/font-awesome-4.6.3/css/font-awesome.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script src="/js/jquery.bxslider/jquery.bxslider.min.js"></script>
 		<script type="text/javascript">
@@ -114,7 +115,8 @@
 
                 <li class="flex-item item">
                     <div class="icon">
-                        <div class="color-photo stroke"></div>
+                        <div class="stroke"></div>
+                        <div class="color-photo"></div>
                     </div>
                     <div class="user-name">anton petrov</div>
                     <div class="position">General manager</div>
@@ -136,7 +138,8 @@
 
                 <li class="flex-item item">
                     <div class="icon">
-                        <div class="color-photo stroke"></div>
+                        <div class="stroke"></div>
+                        <div class="color-photo"></div>
                     </div>
                     <div class="user-name">kirl donchev</div>
                     <div class="position">Design Master</div>
@@ -158,7 +161,8 @@
 
                 <li class="flex-item item">
                     <div class="icon">
-                        <div class="color-photo stroke"></div>
+                        <div class="stroke"></div>
+                        <div class="color-photo"></div>
                     </div>
                     <div class="user-name">ilian bonev</div>
                     <div class="position">Developer Ninja</div>
@@ -180,7 +184,8 @@
 
                 <li class="flex-item item">
                     <div class="icon">
-                        <div class="color-photo stroke"></div>
+                        <div class="stroke"></div>
+                        <div class="color-photo"></div>
                     </div>
                     <div class="user-name">doni stamov</div>
                     <div class="position">SEO guru</div>
@@ -238,44 +243,85 @@
             <!-- Наши фото -->
             <ul class="flex-container our-photos">
 
-                <li class="flex-item cover">
+                <li class="flex-item">
                     <div class="image picture-1"></div>
                     <div class="name-image">aenean a elit</div>
+                    <div class="superimposition">
+                        <div class="field"></div>
+                        <div class="cover">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </li>
 
-                <li class="flex-item cover">
+                <li class="flex-item">
                     <div class="image picture-2"></div>
                     <div class="name-image">aliquam</div>
+                    <div class="superimposition">
+                        <div class="cover">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </li>
 
-                <li class="flex-item cover">
+                <li class="flex-item">
                     <div class="image picture-3"></div>
                     <div class="name-image">suspendisse libero</div>
+                    <div class="superimposition">
+                        <div class="cover">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </li>
 
-                <li class="flex-item cover">
+                <li class="flex-item">
                     <div class="image picture-4"></div>
                     <div class="name-image">maesenas fringilla</div>
+                    <div class="superimposition">
+                        <div class="cover">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </li>
 
-                <li class="flex-item cover">
+                <li class="flex-item">
                     <div class="image picture-5"></div>
                     <div class="name-image">dones vehicula</div>
+                    <div class="superimposition">
+                        <div class="cover">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </li>
 
-                <li class="flex-item cover">
+                <li class="flex-item">
                     <div class="image picture-6"></div>
                     <div class="name-image">ut en sapien</div>
+                    <div class="superimposition">
+                        <div class="cover">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </li>
 
-                <li class="flex-item cover">
+                <li class="flex-item">
                     <div class="image picture-7"></div>
                     <div class="name-image">guis malesuada</div>
+                    <div class="superimposition">
+                        <div class="cover">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </li>
 
-                <li class="flex-item cover">
+                <li class="flex-item">
                     <div class="image picture-8"></div>
                     <div class="name-image">vestibulum ante</div>
+                    <div class="superimposition">
+                        <div class="cover">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -324,7 +370,9 @@
                     <input type="text" placeholder="Name">
                     <input type="text" placeholder="E-mail">
                     <textarea name="" id="" placeholder="Your question"></textarea>
-                    <button>send</button>
+                    <div class="button">
+                        <button>send</button>
+                    </div>
                 </div>
             </div>
             <div class="flex-container footer">
