@@ -1,0 +1,129 @@
+.block-4 {
+    background: #81a256 url("/images/backgraund-green.png") no-repeat 0px 0px;
+    padding: 189px 0px 107px 0px;
+
+    .block-portfolio {
+        font-family: 'LatoLight';
+        font-weight: bold;
+        width: 1010px;
+        margin: -26px auto 0px auto;
+        border-top: 1px #94b963 solid;
+        border-bottom: 1px #94b963 solid;
+        padding: 40px 20px;
+
+        // Ссылки навигация по портфолио
+
+        .flex-item {
+            font-size: 16px;
+            margin: 0px 20px;
+            padding: 5px;
+            text-transform: capitalize;
+            border-radius: 5px;
+
+            &:not(.portfolio):hover {
+                background-color: #f5c149;
+                transition: 0.5s;
+            }
+        }
+
+        .portfolio {
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-right: 390px;
+            padding: 0px;
+        }
+    }
+
+    .our-photos {
+        margin-top: 38px;
+        padding: 0 100px;
+
+        .flex-item {
+            margin: 10px;
+            position: relative;
+
+            .cover {
+                content: '';
+                opacity: 0;
+                width: 40px;
+                height: 40px;
+                border: 2px #ffffff solid;
+                border-radius: 50%;
+                position: absolute;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            .image {
+                width: 260px;
+                height: 200px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                overflow: hidden;
+            }
+
+            .name-image {
+                height: 50px;
+                background-color: #eeeeee;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                color: #727272;
+                position: relative;
+                text-transform: uppercase;
+                line-height: 50px;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-left: 12px solid transparent;
+                    border-right: 12px solid transparent;
+                    border-bottom: 12px solid #eeeeee;
+                    position: absolute;
+                    top: -12px;
+                    left: 118px;
+                }
+            }
+
+            .picture-1 {
+                background: url('/images/picture1.png') no-repeat -33px 0;
+            }
+
+            .picture-2 {
+                background: url('/images/picture2.png') no-repeat 0 0;
+            }
+
+            .picture-3 {
+                background: url('/images/picture3.png') no-repeat 0 -140px;
+            }
+
+            .picture-4 {
+                background: url('/images/picture4.png') no-repeat 0 0;
+            }
+
+            .picture-5 {
+                background: url('/images/picture5.png') no-repeat 0 0;
+            }
+
+            .picture-6 {
+                background: url('/images/picture6.png') no-repeat 0 0;
+            }
+
+            .picture-7 {
+                background: url('/images/picture7.png') no-repeat 0 0;
+            }
+
+            .picture-8 {
+                background: url('/images/picture8.png') no-repeat 0 0;
+            }
+        }
+    }
+}
+
+
+
+
+
