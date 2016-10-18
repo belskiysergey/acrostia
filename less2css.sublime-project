@@ -1,0 +1,21 @@
+/*
+ * Less2Css project settings
+ * https://github.com/timdouglas/sublime-less2css
+ *
+ */
+
+{
+  "autoCompile": true,
+  "createCssSourceMaps": false,
+  "ignorePrefixedFiles": false,
+  "lessBaseDir": "./",
+  "lesscCommand": false,
+  "main_file": "main.less",
+  "minify": true,
+  "minName": false,
+  "outputDir": "auto",
+  "outputFile": "",
+  "showErrorWithWindow": true,
+  "autoprefix": false,
+  "disableVerbose":false
+}
