@@ -42,17 +42,31 @@
             margin: 10px;
             position: relative;
 
-            .cover {
-                content: '';
+            .superimposition {
                 opacity: 0;
-                width: 40px;
-                height: 40px;
-                border: 2px #ffffff solid;
-                border-radius: 50%;
+                width: 260px;
+                height: 250px;
+                transition: opacity 0.3s ease;
+                border-radius: 5px;
+                background-color: rgba(0, 0, 0, 0.5);
                 position: absolute;
+                top: 0;
 
-                &:hover {
-                    opacity: 1;
+                .cover {
+                    opacity: 0;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px rgba(255, 255, 255, 0.7) solid;
+                    border-radius: 50%;
+                    padding: 8px 0px;
+                    box-sizing: border-box;
+                    position: absolute;
+                    top: 80px;
+                    left: 110px;
+
+                    .fa {
+                        color: rgba(255, 255, 255, 0.7);
+                    }
                 }
             }
 
@@ -118,6 +132,16 @@
 
             .picture-8 {
                 background: url('/images/picture8.png') no-repeat 0 0;
+            }
+
+            &:hover {
+                .superimposition {
+                    opacity: 1;
+
+                    .cover {
+                        opacity: 1;
+                    }
+                }
             }
         }
     }
