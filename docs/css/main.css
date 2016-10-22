@@ -1,29 +1,30 @@
+/* variables */
 /* fonts */
 @font-face {
   font-family: 'LatoRegular';
-  src: url('/font/LatoRegular.eot');
-  src: url('/font/LatoRegular.eot?#iefix') format('embedded-opentype'), url('/font/LatoRegular.woff2') format('woff2'), url('/font/LatoRegular.woff') format('woff'), url('/font/LatoRegular.ttf') format('truetype'), url('/font/LatoRegular.svg#PT Sans Regular') format('svg');
+  src: url('../font/LatoRegular.eot');
+  src: url('../font/LatoRegular.eot?#iefix') format('embedded-opentype'), url('../font/LatoRegular.woff2') format('woff2'), url('../font/LatoRegular.woff') format('woff'), url('../font/LatoRegular.ttf') format('truetype'), url('../font/LatoRegular.svg#PT Sans Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Damion';
-  src: url('/font/damion.eot');
-  src: url('/font/damion.eot?#iefix') format('embedded-opentype'), url('/font/damion.woff2') format('woff2'), url('/font/damion.woff') format('woff'), url('/font/damion.ttf') format('truetype'), url('/font/damion.svg#PT Sans Regular') format('svg');
+  src: url('../font/damion.eot');
+  src: url('../font/damion.eot?#iefix') format('embedded-opentype'), url('../font/damion.woff2') format('woff2'), url('../font/damion.woff') format('woff'), url('../font/damion.ttf') format('truetype'), url('../font/damion.svg#PT Sans Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'LatoLight';
-  src: url('/font/Lato-Light.eot');
-  src: url('/font/Lato-Light.eot?#iefix') format('embedded-opentype'), url('/font/Lato-Light.woff2') format('woff2'), url('/font/Lato-Light.woff') format('woff'), url('/font/Lato-Light.ttf') format('truetype'), url('/font/Lato-Light.svg#PT Sans Regular') format('svg');
+  src: url('../font/Lato-Light.eot');
+  src: url('../font/Lato-Light.eot?#iefix') format('embedded-opentype'), url('../font/Lato-Light.woff2') format('woff2'), url('../font/Lato-Light.woff') format('woff'), url('../font/Lato-Light.ttf') format('truetype'), url('../font/Lato-Light.svg#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'LatoBlack';
-  src: url('/font/Lato-Black.eot');
-  src: url('/font/Lato-Black.eot?#iefix') format('embedded-opentype'), url('/font/Lato-Black.woff2') format('woff2'), url('/font/Lato-Black.woff') format('woff'), url('/font/Lato-Black.ttf') format('truetype'), url('/font/Lato-Black.svg#PT Sans Regular') format('svg');
+  src: url('../font/Lato-Black.eot');
+  src: url('../font/Lato-Black.eot?#iefix') format('embedded-opentype'), url('../font/Lato-Black.woff2') format('woff2'), url('../font/Lato-Black.woff') format('woff'), url('../font/Lato-Black.ttf') format('truetype'), url('../font/Lato-Black.svg#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -320,8 +321,8 @@ a {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+  src: url('../font/font-awesome/fontawesome-webfont.eot?v=4.6.3');
+  src: url('../font/font-awesome/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('../font/font-awesome/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('../font/font-awesome/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('../font/font-awesome/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('../font/font-awesome/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
