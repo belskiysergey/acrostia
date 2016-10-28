@@ -12,47 +12,57 @@
 	  			$('.bxslider').bxSlider();
 			});
 		</script>
+        <script>
+            $(function () {
+                $('body').on('click', 'a[href^=#]', function(e) {
+                    var id = $(this).attr('href');
+                    var $element = $(id);
+
+                    if (!$element.length) return;
+
+                    var topPositionOfElement = $element.offset().top;
+                    var animateOptions = {scrollTop: topPositionOfElement};
+
+                    $('html,body').animate(animateOptions, 500);
+                    e.preventDefault();
+                });
+            });
+        </script>
     </head>
     <body>
+        <!-- Меню -->
+        <menu>
+            <span class="acrostia">acrostia</span>
+            <ul class="flex-container">
+                <li class="flex-item"><a href="#home">Home</a></li>
+                <li class="flex-item"><a href="#services">Services</a></li>
+                <li class="flex-item"><a href="#about">About</a></li>
+                <li class="flex-item"><a href="#work">Work</a></li>
+                <li class="flex-item"><a href="#contacts">Contacts</a></li>
+            </ul>
+        </menu>
         <!-- Блок-1 -->
-        <section class="block-1">
+        <section class="block-1" id="home">
             <!-- Карусель -->
             <ul class="bxslider">
                 <li><img src="images/img-1.jpg"></li>
                 <li><img src="images/priroda_v_podborke_kachestvenn_1629540.jpeg"></li>
                 <li><img src="images/Space__038321_.jpg"></li>
             </ul>
-			<!---->
-			<div class="acrostia">acrostia</div>
-			<menu>
-				<a href="#">Home</a>
-				<a href="#">Services</a>
-				<a href="#">About</a>
-				<a href="#">Work</a>
-				<a href="#">Contacts</a>
-			</menu>
+            <!-- Баннер -->
 			<div class="banner">
 				<span class="good-ideas">good ideas<br><span class="comes">comes</span></span>
 				<span class="first">first!</span>
 			</div>
 		</section>
         <!-- Блок-2 -->
-        <section class="block-2">
-            <div class="acrostia">acrostia</div>
-            <menu>
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">About</a>
-                <a href="#">Work</a>
-                <a href="#">Contacts</a>
-            </menu>
+        <section class="block-2" id="services">
             <h1>our services</h1>
             <div class="subtitle">Cras commodo matis justo nec <span>lodortis</span>. nam ut tellus lobortis, ullamcorper massa sit amet</div>
             <div class="info red">
                 Cras suscipit porttitor. Morb sit amet tincidunt sapien. Curabitur posuere lectus aliguet erat rutrum sollicitudin. In enim diam, ullamcorper guis libero et, ultrisies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere guis.
             </div>
             <ul class="flex-container distance">
-
                 <li class="flex-item item">
                     <div class="icon lightbulb">
                         <div class="stroke"></div>
@@ -96,15 +106,7 @@
             </ul>
         </section>
         <!-- Блок-3 -->
-        <section class="block-3">
-            <div class="acrostia">acrostia</div>
-            <menu>
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">About</a>
-                <a href="#">Work</a>
-                <a href="#">Contacts</a>
-            </menu>
+        <section class="block-3" id="about">
             <h1>who we are & what we do</h1>
             <div class="info purple">
                 Cras suscipit porttitor. Morb sit amet tincidunt sapien. Curabitur posuere lectus aliguet erat rutrum sollicitudin. In enim diam, ullamcorper guis libero et, ultrisies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere guis.
@@ -206,15 +208,7 @@
             </ul>
         </section>
         <!-- Блок-4 -->
-        <section class="block-4">
-            <div class="acrostia">acrostia</div>
-            <menu>
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">About</a>
-                <a href="#">Work</a>
-                <a href="#">Contacts</a>
-            </menu>
+        <section class="block-4" id="work">
             <h1>our work</h1>
             <div class="info">
                 Cras suscipit porttitor. Morb sit amet tincidunt sapien. Curabitur posuere lectus aliguet erat rutrum sollicitudin. In enim diam, ullamcorper guis libero et, ultrisies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere guis.
@@ -224,19 +218,19 @@
                 <li class="flex-item portfolio">portfolio</li>
 
                 <li class="flex-item">
-                    <a href="#">All</a>
+                    <a href="javascript:void(0)">All</a>
                 </li>
 
                 <li class="flex-item">
-                    <a href="#">Photography</a>
+                    <a href="javascript:void(0)">Photography</a>
                 </li>
 
                 <li class="flex-item">
-                    <a href="#">Logo design</a>
+                    <a href="javascript:void(0)">Logo design</a>
                 </li>
 
                 <li class="flex-item">
-                    <a href="#">Web desing</a>
+                    <a href="javascript:void(0)">Web desing</a>
                 </li>
             </ul>
             <!-- Наши фото -->
@@ -325,15 +319,7 @@
             </ul>
         </section>
         <!-- Блок-5 -->
-        <section class="block-5">
-            <div class="acrostia">acrostia</div>
-            <menu>
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">About</a>
-                <a href="#">Work</a>
-                <a href="#">Contacts</a>
-            </menu>
+        <section class="block-5" id="contacts">
             <h1>contact us</h1>
             <div class="info">
                 Cras suscipit porttitor. Morb sit amet tincidunt sapien. Curabitur posuere lectus aliguet erat rutrum sollicitudin. In enim diam, ullamcorper guis libero et, ultrisies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere guis.
@@ -362,7 +348,7 @@
                             <span class="skype">AcOstia</span>
                         </li>
                     </ul>
-                    <iframe  class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9155.491652076345!2d0.18902463316815826!3d51.273700396186854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ad4c5d5bdfc1%3A0x2c9c51426386fe62!2z0KHQtdCy0LXQvdC-0LrRgSwg0KHQtdCy0LXQvdC-0YPQutGBLCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sua!4v1477139321030" width="260" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d169324.7561501514!2d35.000356450000005!3d48.462298499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LPQtdGA0L7QtdCyINGB0YLQsNC70LjQvdCz0YDQsNC00LAgMTIy!5e0!3m2!1sru!2sua!4v1477678998899" width="260" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <div class="flex-item distance">
                     <h5>Ask a question</h5>

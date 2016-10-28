@@ -31,18 +31,11 @@
     }
 
     menu {
-        top: 3px;
+        width: 400px;
 
-        a {
-            padding: 10px 4px 8px 4px;
-            font-size: 12px;;
+        li {
+            padding: 10px 12px 8px 12px;
         }
-    }
-
-    .acrostia {
-        font-size: 28px;
-        top: 4px;
-        left: 30px;
     }
 
     .banner {
@@ -69,24 +62,21 @@
         }
     }
 
-    .block-3 {
-        .distance {
-            .item {
-                .icon {
-                    .color-photo {
-                        width: 130px;
-                        height: 130px;
-                        border: 5px #c25760 solid;
-                        background: url("@{images_dir}/sprite-human.png") no-repeat -12px -238px;
-                    }
-                }
-            }
-        }
+    .block-3 .distance .item .icon .color-photo {
+        width: 130px;
+        height: 130px;
+        border: 5px #c25760 solid;
+        background: url("@{images_dir}/sprite-human.png") no-repeat -12px -238px;
     }
 
     .block-4 {
         .block-portfolio {
             padding: 5px 0;
+
+            .flex-item {
+                margin: 0px 10px;
+                font-size: 16px;
+            }
 
             .portfolio {
                 display: none;
@@ -131,11 +121,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
